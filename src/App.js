@@ -1,61 +1,57 @@
-import React from "react";
-import { HashRouter } from "react-router-dom";
-import {  mainBody, about, leadership, works, skills, experiences } from "./config/config.js";
-import MainBody from "./components/home/MainBody";
-import AboutMe from "./components/home/AboutMe";
-import Project from "./components/home/Project";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import Skills from "./components/home/Skills";
-import Leadership from "./components/home/Leadership.jsx";
-import Experience from "./components/home/Experience";
+import React, { Component } from "react";
+import ReactGA from "react-ga";
+import $ from "jquery";
+import "./App.css";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import About from "./Components/About";
+import Resume from "./Components/Resume";
+import Contact from "./Components/Contact";
+import Portfolio from "./Components/Portfolio";
 
-const Home = React.forwardRef((props, ref) => {
-  return (
-    <>
-      <MainBody
-        gradient={mainBody.gradientColors}
-        title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
-        message={mainBody.message}
-        icons={mainBody.icons}
-        ref={ref}
-      />
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      foo: "bar",
+      resumeData: {}
+    };
 
-      {about.show && (
-        <AboutMe
-          heading={about.heading}
-          message={about.message}
-          link={about.imageLink}
-          imgSize={about.imageSize}
-          resume={about.resume}
-        />
-      )}
+    ReactGA.initialize("UA-110570651-1");
+    ReactGA.pageview(window.location.pathname);
+  }
 
-      {experiences.show && <Experience experiences={experiences} />}
-      <Project heading={works.heading} works={works.works} />
-      {leadership.show && (
-        <Leadership
-          heading={leadership.heading}
-          message={leadership.message}
-          img={leadership.images}
-          imageSize={leadership.imageSize}
-        />
-      )}
-      {skills.show && <Skills heading={skills.heading} hardSkills={skills.hardSkills} softSkills={skills.softSkills} />}
-    </>
-  );
-});
+  getResumeData() {
+    $.ajax({
+      url: "./resumeData.json",
+      dataType: "json",
+      cache: false,
+      success: function(data) {
+        this.setState({ resumeData: data });
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.log(err);
+        alert(err);
+      }
+    });
+  }
 
-const App = () => {
-  const titleRef = React.useRef();
+  componentDidMount() {
+    this.getResumeData();
+  }
 
-  return (
-    <HashRouter basename={process.env.PUBLIC_URL + "/"}>
-      <Navbar ref={titleRef} />
-      <Home ref={titleRef} />
-      <Footer />
-    </HashRouter>
-  );
-};
+  render() {
+    return (
+      <div className="App">
+        <Header data={this.state.resumeData.main} />
+        <About data={this.state.resumeData.main} />
+        <Resume data={this.state.resumeData.resume} />
+        <Portfolio data={this.state.resumeData.portfolio} />
+        <Contact data={this.state.resumeData.main} />
+        <Footer data={this.state.resumeData.main} />
+      </div>
+    );
+  }
+}
 
 export default App;
