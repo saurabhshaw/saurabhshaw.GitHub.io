@@ -1,41 +1,62 @@
 import React, { Component } from "react";
-import Zmage from "react-zmage";
-import Fade from "react-reveal";
+import Slide from "react-reveal";
 
-let id = 0;
 class Portfolio extends Component {
+  getRandomColor() {
+    let letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
   render() {
     if (!this.props.data) return null;
 
-    const projects = this.props.data.projects.map(function (projects) {
-      let projectImage = "images/portfolio/" + projects.image;
+	const DownloadstyleObj = {width: "auto",textAlign: "center"};
 
+    const projectsImages = this.props.data.projects.map(function (projects) {
+		let projectImagePath = "images/portfolio/" + projects.image;
       return (
-        <div key={id++} className="columns portfolio-item">
-          <div className="item-wrap">
-            <Zmage alt={projects.title} src={projectImage} />
-            <div style={{ textAlign: "center" }}>{projects.title}</div>
-          </div>
-        </div>
+        <div className="three columns header-col">
+		  <h1><span><img src={projectImagePath}/></span></h1>
+		</div>
+      );
+    });	
+	
+	const projects = this.props.data.projects.map(function (projects) {
+		let projectImagePath = "images/portfolio/" + projects.image;
+
+      return (		
+		<div className="row projects">
+            <div className="three columns header-col">
+              <img src={projectImagePath}/>
+            </div>
+            <div className="nine columns main-col">
+              <h3>{projects.title}</h3>
+			  <p>{projects.category}</p>
+            </div>
+		</div>
+        
       );
     });
-
+	
     return (
       <section id="portfolio">
-        <Fade left duration={1000} distance="40px">
-          <div className="row">
-            <div className="twelve columns collapsed">
-              <h1>Check Out Some of My Works.</h1>
 
-              <div
-                id="portfolio-wrapper"
-                className="bgrid-quarters s-bgrid-thirds cf"
-              >
-                {projects}
-              </div>
+        <Slide left duration={1300}>
+          <div className="row work">
+			<div className="nine columns main-col"><h1>Research Projects & Themes</h1></div>
+
+            <div className="three columns header-col">
+              <h1>
+                <span>&nbsp;&nbsp;</span>
+              </h1>			    
             </div>
+			{projects}
           </div>
-        </Fade>
+        </Slide>
       </section>
     );
   }

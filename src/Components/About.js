@@ -7,7 +7,10 @@ class About extends Component {
 
     const name = this.props.data.name;
     const profilepic = "images/" + this.props.data.image;
+	const AffiliationPic = "images/" + "AffiliationsBanner.JPG"
     const bio = this.props.data.bio;
+	const bio_current = this.props.data.bio_current;
+	const bio_past = this.props.data.bio_past;
     const street = this.props.data.address.street;
     const city = this.props.data.address.city;
     const state = this.props.data.address.state;
@@ -15,6 +18,7 @@ class About extends Component {
     const phone = this.props.data.phone;
     const email = this.props.data.email;
     const resumeDownload = this.props.data.resumedownload;
+	const DownloadstyleObj = {width: "auto",textAlign: "center"};
 
     return (
       <section id="about">
@@ -22,39 +26,31 @@ class About extends Component {
           <div className="row">
             <div className="three columns">
               <img
-                className="profile-pic"
+                style={DownloadstyleObj}
                 src={profilepic}
-                alt="Nordic Giant Profile Pic"
+                alt="Saurabh Shaw Profile Pic"
               />
+			  <div className="columns download">
+				<a href={resumeDownload} className="button" style={DownloadstyleObj}>
+				    <i className="fa fa-download"></i> Download Resume/CV
+				</a>
+			  </div>
             </div>
             <div className="nine columns main-col">
               <h2>About Me</h2>
 
               <p>{bio}</p>
+			  <p>{bio_current}</p>
+			  <p>{bio_past}</p>
               <div className="row">
-                <div className="columns contact-details">
-                  <h2>Contact Details</h2>
-                  <p className="address">
-                    <span>{name}</span>
-                    <br />
-                    <span>
-                      {street}
-                      <br />
-                      {city} {state}, {zip}
-                    </span>
-                    <br />
-                    <span>{phone}</span>
-                    <br />
-                    <span>{email}</span>
-                  </p>
+                <div className="column">
+                  <h2>Affiliations:</h2>
+                  <img
+					src={AffiliationPic}
+					alt="Affiliations"
+				  />
                 </div>
-                <div className="columns download">
-                  <p>
-                    <a href={resumeDownload} className="button">
-                      <i className="fa fa-download"></i>Download Resume
-                    </a>
-                  </p>
-                </div>
+				
               </div>
             </div>
           </div>
