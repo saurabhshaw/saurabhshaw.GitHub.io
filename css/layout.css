@@ -250,6 +250,7 @@ ul#nav li.current a { color: #fe6928; }
    padding-bottom: 6px;
 }
 #resume h3 {
+   padding-top: 15px;
    font: 25px/30px 'opensans-bold', sans-serif;
 }
 
@@ -417,12 +418,19 @@ ul#nav li.current a { color: #fe6928; }
    padding-bottom: 60px;
 }
 #portfolio h1 {
-   font: 25px/35px 'opensans-bold', sans-serif;
+   font: 30px/40px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
    text-align: center;
    margin-bottom: 48px;
    color: #272A2E;
+}
+
+.projects{
+   padding-top: 24px;
+   margin-bottom: 48px;
+   padding-bottom: 24px;
+   border-bottom: 2px solid #C5C5C5;
 }
 
 /* Portfolio Content */
