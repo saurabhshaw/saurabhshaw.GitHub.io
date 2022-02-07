@@ -8,11 +8,11 @@
 	"bio_past":"I completed my PhD under the supervision of Dr. Sue Becker at McMaster University, where my work focused on identifying signatures of brain networks using a cheaper and more clinically feasible imaging modality (EEG), compared to the current norm (fMRI), for better diagnosis of patients with complex mental health disorders (e.g. PTSD). I also completed my Bachelor's and Master's degree in Electrical and Biomedical Engineering from McMaster University, while developing better treatment tracking tools for concussion, and applying machine learning to improveme medical imaging of muscle. Read more about my research training and projects below...",
     "contactmessage":"Feel free to contact me using the form below",
     "email": "sshaw62@uwo.ca",
-    "phone": "555-555-5555",
+    "phone": "(519) 661-2111",
     "github":"https://github.com/saurabhshaw",
     "project":"https://github.com/nordicgiant2/saurabhshaw",
     "address":{
-      "street":"",
+      "street":"1151 Richmond St",
       "city":"London",
       "state":"ON",
       "zip": ""
@@ -61,14 +61,14 @@
         "company":"Tracking the Brain's Intrinsic Connectivity Networks in EEG",
         "title":"SB Shaw, MC McKinnon, JJ Heisz, AH Harrison, JF Connolly, S Becker",
         "years":"bioRxiv, 2021",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know.",
+        "description":"",
 		"link":"https://doi.org/10.1101/2021.06.18.449078"
       },
       {
         "company":"Dynamic task-linked switching between brain networks–A tri-network perspective",
         "title":"SB Shaw, MC McKinnon, J Heisz, S Becker",
         "years":"Brain and Cognition, 2021",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know.",
+        "description":"",
 		"link":"https://doi.org/10.1016/j.bandc.2021.105725"
       }
 	  ,
@@ -76,49 +76,49 @@
         "company":"Combining Aerobic Exercise and Mindfulness-like Neurofeedback (NFB) for better Intrinsic Connectivity Network (ICN) Synchrony",
         "title":"SB Shaw, Y Levy, A Mizzi, MC McKinnon, J Heisz, S Becker",
         "years":"Frontiers of Human Neuroscience, Submitted",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know.",
+        "description":"",
 		"link":"https://scholar.google.ca/citations?view_op=view_citation&hl=en&user=u62mGv0AAAAJ&sortby=pubdate&citation_for_view=u62mGv0AAAAJ:JQOojiI6XY0C"
       },
       {
         "company":"Towards EEG-based biomarkers of large scale brain networks",
         "title":"SB Shaw",
         "years":"MacSphere, 2021",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know.",
+        "description":"",
 		"link":"https://macsphere.mcmaster.ca/handle/11375/26931"
       },
       {
         "company":"Quantitative ultrasound of trapezius muscle involvement in myofascial pain: comparison of clinical and healthy population using texture analysis",
         "title":"D Kumbhare, SB Shaw, S Ahmed, MD Noseworthy",
         "years":"Journal of Ultrasound, 2020",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know.",
+        "description":"",
 		"link":"https://doi.org/10.1007/s40477-018-0330-5"
       },
       {
         "company":"Capturing the Forest But Missing the Trees: Microstates Inadequate for Characterizing Shorter-Scale EEG Dynamics",
         "title":"SB Shaw, K Dhindsa, JP Reilly, S Becker",
         "years":"Neural Computation, 2019",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know.",
+        "description":"",
 		"link":"https://doi.org/10.1162/neco_a_01229"
       },
       {
         "company":"Comparing tactile to auditory guidance for blind individuals",
         "title":"A Bharadwaj, SB Shaw, D Goldreich",
         "years":"Frontiers in Human Neuroscience, 2019",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know.",
+        "description":"",
 		"link":"https://doi.org/10.3389/fnhum.2019.00443"
       },
       {
         "company":"Quantitative ultrasound assessment of myofascial pain syndrome affecting the trapezius: a reliability study",
         "title":"D Kumbhare, SB Shaw, L Grosman-Rimon, MD Noseworthy",
         "years":"Journal of Ultrasound in Medicine, 2017",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know.",
+        "description":"",
 		"link":"https://doi.org/10.1002/jum.14308"
       },
       {
         "company":"Real-time filtering of gradient artifacts from simultaneous EEG-fMRI data",
         "title":"SB Shaw",
         "years":"PRNI, 2017",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know.",
+        "description":"",
 		"link":"https://doi.org/10.1109/PRNI.2017.7981510"
       }
 	  
