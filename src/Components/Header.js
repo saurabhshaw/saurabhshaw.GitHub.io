@@ -11,12 +11,13 @@ class Header extends Component {
     const github = this.props.data.github;
     const name = this.props.data.name;
     const description = this.props.data.description;
-	const profilepic = "images/" + this.props.data.image;
+	  const profilepic = "images/" + this.props.data.image;
 
 
     return (
       <header id="home">
-        <ParticlesBg  type="cobweb" color='#04ECF0' num={200} bg={true} />
+
+        <ParticlesBg  type="cobweb" color='#04ECF0' num={200} bg={true}/>
 
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
@@ -40,22 +41,22 @@ class Header extends Component {
             </li>
 
             <li>
-              <a className="smoothscroll" href="#resume">
-                Resume/CV
-              </a>
-            </li>
-
-            <li>
               <a className="smoothscroll" href="#portfolio">
                 Projects
               </a>
             </li>
-			
-			<li>
+
+            <li>
               <a className="smoothscroll" href="#media">
                 In the Media
               </a>
             </li>
+
+            <li>
+              <a className="smoothscroll" href="#resume">
+                Experience
+              </a>
+            </li>  
 
             <li>
               <a className="smoothscroll" href="#contact">

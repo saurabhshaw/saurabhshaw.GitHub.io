@@ -54,7 +54,7 @@ class Portfolio extends Component {
                 <span>&nbsp;&nbsp;</span>
               </h1>			    
             </div>
-			{projects}
+			      {projects}
           </div>
         </Slide>
       </section>
