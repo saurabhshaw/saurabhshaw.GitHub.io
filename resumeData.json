@@ -7,13 +7,13 @@
     "bio_current":"I am currently an Adjunct Research Professor at the Departments of Psychiatry and Neuroscience at Western University, where I further my quest into AI-powered neuroscience and Brain-Computer Interfaces (BCIs) for improved quality-of-life and better mental health. Most recently, I held the position of Senior Data Scientist at Cognixion Inc., where my work focused on developing a viable communicative BCI in Augmented Reality (AR) for those with Amyotrophic Lateral Sclerosis (ALS), running a host of research studies to understand the dynamics of selective attention and factors affecting BCI performance, and finally customizing the AI models to account for these factors.",
 	"bio_past":"I completed a MITACS Industrial post-doctoral fellowship at the Homewood Research Institute (HRI), and the Department of Psychiatry at Western University, under the supervision of Dr. Ruth Lanius, where I applied my machine learning (ML) and artifical intelligence (AI) expertise to translate research-findings into clinical neuromarkers of post-traumatic stress disorder (PTSD), to improve diagnosis and treatment of such psychological disorders. I also was a postgraduate affiliate of the Vector Institute for Artificial Intelligence (AI), Toronto. I acquired my PhD under the supervision of Dr. Sue Becker at McMaster University, where my work focused on identifying signatures of brain networks using a cheaper and more clinically feasible imaging modality (EEG), compared to the current norm (fMRI), for better diagnosis of patients with complex mental health disorders (e.g. PTSD). I also completed my Bachelor's and Master's degree in Electrical and Biomedical Engineering from McMaster University, while developing better treatment tracking tools for concussion, and applying machine learning to improveme medical imaging of muscle. Read more about my research training and projects below...",
     "contactmessage":"Feel free to contact me using the form below",
-    "email": "sshaw62@uwo.ca",
-    "phone": "(519) 661-2111",
+    "email": "sshaw62@uwo.ca, saurabhshaw2006@gmail.com",
+    "phone": "",
     "github":"https://github.com/saurabhshaw",
     "project":"https://github.com/nordicgiant2/saurabhshaw",
     "address":{
-      "street":"1151 Richmond St",
-      "city":"London",
+      "street":"",
+      "city":"Hamilton",
       "state":"ON",
       "zip": ""
     },
@@ -39,6 +39,18 @@
     "education":[
       
       {
+        "school":"ENO Headphones",
+        "degree":"AI Scientist & Scientific Advisor",
+        "graduated":"2024-Ongoing",
+        "description":"I am providing scientific, AI & business direction to modulate user states with commercial EEG-powered headphones. I am also conceptualizing, building, validating & deploying AI algorithms using real-time time-series EEG data to detect & modulate user states."
+      },
+      {
+        "school":"MindMaze",
+        "degree":"Regulatory/Research Consultant",
+        "graduated":"2024-Ongoing",
+        "description":"I am collaborating with regulatory/research teams to perform Medical Device Regulation (MDR) certification for CE marking of EMG-based and digital neurorehabilitation devices indicated for stroke, accelerating the MDR review by up to 10 times through the use of fine-tuned LLMs + RAG systems."
+      },
+      {
         "school":"Queen's University, Neurotech Microcredential Program",
         "degree":"Neurotech Course Development Lead",
         "graduated":"2022-Ongoing",
@@ -58,13 +70,13 @@
       },
       {
         "school":"Western University, Department of Psychiatry",
-        "degree":"Post-Doctoral Fellowship",
+        "degree":"Post-Doctoral Scientist",
         "graduated":"2020-2022",
         "description":"I worked on a series of projects focused on identifying neural correlates of PTSD and its subtypes to improve diagnosis and treatments, bridging the gap between researchers and clinicians under the supervision of Dr. Ruth Lanius. I was a core contributor in the acquisition, administration and execution of a $1.2M grant from the Canadian Military to study the neural correlates of moral injury in healthcare workers and pilot novel therapies."
       },
       {
-        "school":"McMaster University, Neuroscience",
-        "degree":"Doctor of Philosophy (PhD)",
+        "school":"McMaster University, Applied AI - Integrated Neuroscience",
+        "degree":"Doctoral Researcher (PhD)",
         "graduated":"2020",
         "description":"Under the supervision of Dr. Sue Becker, my work focused on improving our understanding of brain network dynamics and creating a clinically feasible tool capable of tracking the activity and synchrony of such brain networks, to be used as biomarkers for better treatment planning and tracking treatment response in patients with PTSD. I was awarded the NSERC Alexander Graham Bell Canada Graduate Scholarship (CGS-G), a prestigious national scholarship, for this doctoral work."
       },
@@ -83,6 +95,13 @@
     ],
     "work":[
       
+      {
+        "company":"Breaking the circuit: Reduced cerebello-thalamo-cortical functional connectivity during traumatic memory retrieval in PTSD and its dissociative subtype",
+        "title":"BE Kearney, M Densmore, J Théberge, R Jetly, M McKinnon, SB Shaw*, R Lanius*",
+        "years":"Nature Mental Health, Under Review",
+        "description":"",
+		"link":"https://www.researchsquare.com/article/rs-6008376/v1"
+      },
       {
         "company":"Large-Scale Functional Hyperconnectivity Patterns Characterizing Trauma-Related Dissociation: A rs-fMRI Study of PTSD and its Dissociative Subtype",
         "title":"SB Shaw, B Terpou, M Densmore, J Théberge, P Frewen, M McKinnon, R Lanius",
